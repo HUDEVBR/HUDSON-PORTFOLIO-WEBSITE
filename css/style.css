@@ -598,7 +598,7 @@ about-grid::before{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 280px
+    min-height: 280px;
 }
 
 .srv-card h3{
