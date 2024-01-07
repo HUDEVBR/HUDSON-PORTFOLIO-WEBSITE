@@ -112,6 +112,7 @@ ul{
     border-bottom: 2.5px solid var(--main-color-2);
     border-radius: 0px;
     padding: 0.15rem 0;
+    min-width: revert;
 }
 
 .btn.secondary-btn::before{
@@ -424,7 +425,7 @@ header.scrolled .logo{
     fill: var(--main-color-1);
 }
 
-about-grid::before{
+.about-grid::before{
     content:"";
     position: absolute;
     width: 210px;
@@ -584,6 +585,7 @@ about-grid::before{
 }
 
 .services-grid{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
@@ -610,4 +612,52 @@ about-grid::before{
 .srv-card .text{
     margin: 0.7rem 0;
     font-size: 0.7rem;
+}
+
+.srv-card:nth-child(2){
+    transform: translateY(2.2rem);
+}
+
+.srv-card:nth-child(3){
+    transform: translateY(-2.2rem);
+}
+
+.services-grid::before{
+    content:"";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px solid var(--main-color-1);
+    z-index:-1;
+    opacity: 0.07;
+}
+
+.services .triangle{
+    top: 100%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%, -100%);
+}
+
+.services .square{
+    top: 75%;
+    left: -15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/*------------------------------------- Portfolio Section Styling ------------------------------------- */
+
+.portfolio-header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.portfolio-title{
+    padding-bottom: 1rem;
 }
