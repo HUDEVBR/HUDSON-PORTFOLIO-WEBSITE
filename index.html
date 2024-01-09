@@ -313,7 +313,7 @@
                           d="M404.26,52.67C302.59,52.67,232.77,0,183.78,0S31.89,28.16,31.89,253.55S170.31,512,224.2,512  C476.54,512.01,584.33,52.67,404.26,52.67z">
                         </path>
                         <path class="st1"
-                          d="M240.77,50.21c-12.16,0-22.05-9.89-22.05-22.05s9.89-22.05,22.05-22.05s22.05,9.89,22.05,22.05  S252.92,50.21,240.77,50.21z M240.77,20.81c-4.06,0-7.35,3.29-7.35,7.35s3.29,7.35,7.35,7.35s7.35-3.29,7.35-7.35  S244.82,20.81,240.77,20.81z">
+                          d="M240.77,50.21c-12.16,0-22.05-9.89-22.05-22 .05s9.89-22.05,22.05-22.05s22.05,9.89,22.05,22.05  S252.92,50.21,240.77,50.21z M240.77,20.81c-4.06,0-7.35,3.29-7.35,7.35s3.29,7.35,7.35,7.35s7.35-3.29,7.35-7.35  S244.82,20.81,240.77,20.81z">
                         </path>
                         <g>
                           <path class="st2" d="M97.45,90.63h36.75v36.75H97.45V90.63z"></path>
@@ -530,6 +530,15 @@
         </section>
 
         <section class="portfolio section">
+          <div class="modal">
+            <div class="modal-overlay">
+              <div class="slider-wrap">
+                <div class="prev-btn navigation">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
             <div class="container">
                 <div class="portfolio-header">
                     <div class="portfolio-title">
@@ -537,19 +546,123 @@
                         <h1 class="heading">Latest Projects</h1>
                     </div>
                     <div class="filter-btns">
-                        <button class="filter-btn">All</button>
-                        <button class="filter-btn">Product</button>
-                        <button class="filter-btn">Interacting</button>
-                        <button class="filter-btn">Web App</button>
+                        <button class="filter-btn" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter=".product">Products</button>
+                        <button class="filter-btn" data-filter=".interact">Interacting</button>
+                        <button class="filter-btn" data-filter=".web">Web App</button>
                     </div>
                 </div>
-                <div class="portfolio-gallery"></div>
+                <div class="portfolio-gallery">
+                  <div class="mix prt-card interact">
+                    <div class="prt-image">
+                      <img src="./assets/port1.jpg" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: 0.15s">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>Olido interaction</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                  <div class="mix prt-card product">
+                    <div class="prt-image">
+                      <img src="./assets/port2.png" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: 0.15s">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>Jhon Product Design</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                  <div class="mix prt-card web">
+                    <div class="prt-image">
+                      <img src="./assets/port3.jpg" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: .15s">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>Meta Web Design</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                  <div class="mix prt-card web">
+                    <div class="prt-image">
+                      <img src="./assets/port4.png" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: 0.15s">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>TwitUp Web Design</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                  <div class="mix prt-card interact">
+                    <div class="prt-image">
+                      <img src="./assets/port5.png" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: 0.15s">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>Hudson Interaction</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                  <div class="mix prt-card web">
+                    <div class="prt-image">
+                      <img src="./assets/port6.jpg" alt="">
+                      <div class="prt-overlay">
+                        <span class="prt-icon" style="--i: 0s">
+                          <i class="uil uil-search-plus"></i>
+                        </span>
+                        <a href="#" class="prt-icon" style="--i: 0.15s ">
+                          <i class="uil uil-link-h"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="prt-desc">
+                      <h3>Demga Web Design</h3>
+                      <a href="#" class="btn secondary-btn sm">Read more</a>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- JavaScript Files-->
 
+    <script src="./js/mixitup.min.js"></script>
     <script src="./js/app.js"></script>
     
 </body>
