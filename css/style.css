@@ -678,7 +678,7 @@ header.scrolled .logo{
 }
 
 .filter-btn.mixitup-control-active{
-    color: var(--main-color-1)
+    color: var(--main-color-1);
 }
 
 .portfolio-gallery {
@@ -780,4 +780,24 @@ btn.secondary-btn.sm::before {
     opacity: 1;
     transform: translateY(0px);
     transition: .3s var(--i);
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 11;
+}
+
+.slider-wrap{
+    width: 90%;
+    max-width: 900px;
+}
+
+.slider-wrap img{
+    width: 100%;
+
 }
