@@ -7,6 +7,10 @@ const progress_bars = document.querySelectorAll(".skills svg circle");
 const ml_section = document.querySelector(".milestones");
 const ml_counters = document.querySelectorAll(".number span");
 
+const prt_section = document.querySelector(".portfolio");
+const zoom_icons = document.querySelectorAll(".zoom-icon");
+const modal_overlay = document.querySelector(".modal-overlay");
+
 
 window.addEventListener("scroll", ()=> {
     if(!skillsPlayed) skillsCounter();
@@ -105,4 +109,16 @@ let mixer = mixitup(".portfolio-gallery", {
     animation: {
         duration: 500,
     },
+});
+
+/*--------------------------- Modal Pop Up Animation ---------------------------*/
+
+zoom_icons.forEach((icon) =>
+    icon.addEventListener("click", () => {
+        prt_section.classList.add("open");
+    })
+);
+
+modal_overlay.addEventListener("click", () => {
+    prt_section.classList.remove("open")
 });
