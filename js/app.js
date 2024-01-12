@@ -122,3 +122,4 @@ zoom_icons.forEach((icon) =>
 modal_overlay.addEventListener("click", () => {
     prt_section.classList.remove("open")
 });
+
