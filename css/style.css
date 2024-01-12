@@ -34,6 +34,11 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
+body.stopScrolling{
+    height: 100%;
+    overflow: hidden;
+}
+
 ::selection{
     background-color: hsla((--hue-1), 100%, 60%, 0.9);
     color: #fff;
@@ -445,7 +450,7 @@ header.scrolled .logo{
     transform: translate(-50%, -50%);
 }
 
-/* ------------- Skills Section Styling ------------- */
+/* --------------------------- Skills Section Styling --------------------------- */
 
 .skills{
     overflow: hidden;
@@ -652,6 +657,10 @@ header.scrolled .logo{
 
 /*------------------------------------- Portfolio Section Styling ------------------------------------- */
 
+.portfolio .container{
+    transition: 0.4s;
+}
+
 .portfolio-header{
     display: flex;
     align-items: flex-end;
@@ -816,7 +825,7 @@ btn.secondary-btn.sm::before {
     align-items: center;
     justify-items: center;
     opacity: 0;
-
+    transition: .2s;
 }
 
 .slider-wrap img{
@@ -843,3 +852,16 @@ btn.secondary-btn.sm::before {
 .portfolio.open .modal-overlay{
     opacity: 1;
 }
+
+.portfolio.open .container{
+    transform: scale(0.9);
+}
+
+.portfolio.open .slider-wrap{
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: .45s .1s;
+}
+
+/* --------------------------- Testimonials Section Styling --------------------------- */
+
