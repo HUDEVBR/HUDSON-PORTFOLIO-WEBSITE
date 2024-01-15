@@ -154,3 +154,18 @@ function changeImage(index) {
     images.forEach((img) => img.classList.remove("showImage"));
     images[index].classList.add("showImage");
 }
+
+/*--------------------------- Modal Pop Up Animation ---------------------------*/
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    loop: true,
+    speed: 500,
+    autoplay: true,
+  
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+  });

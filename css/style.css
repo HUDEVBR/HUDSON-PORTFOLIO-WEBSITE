@@ -875,14 +875,14 @@ btn.secondary-btn.sm::before {
     align-items: center;
 }
 
-.reviews{
+.swiper{
     width: 100%;
     background-color: var(--bg-color-2);
     border-radius: 15px;
-    padding: 2rem 0 2.5rem;
+    padding: 4rem 0 2.5rem;
 }
 
-.rvw{
+.swiper-slide{
     padding: 0 2.5rem;
 }
 
@@ -914,9 +914,32 @@ btn.secondary-btn.sm::before {
     color: var(--main-color-1);
 }
 
-.rvw .text{
+.swiper-slide .text{
     display: block;
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 0;
+}
+
+.swiper-pagination{
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 11px;
+    margin-top: 3rem;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--main-color-1);
+    opacity: 0.3;
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet-active{
+    opacity: 1;
+    width: 11px;
+    height: 11px;
 }
 
 .testimonials-title{
@@ -962,3 +985,6 @@ btn.secondary-btn.sm::before {
     top: 15%;
     transform: translate(-50%, -50%);
 }
+
+/* --------------------------- Testimonials Section Styling --------------------------- */
+
