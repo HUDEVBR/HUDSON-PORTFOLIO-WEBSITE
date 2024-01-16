@@ -5,18 +5,26 @@
 :root{
     --hue-1: 257;
     --hue-2: 47;
-    --bg-color: hsl(var(--hue-1), 40%, 97%);
     --main-color-1: hsl(var(--hue-1), 100%, 60%);
     --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
     --main-color-2: hsl(var(--hue-2), 100%, 61%);
     --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+
+    --section-padding: 7rem;
+}
+
+body{
     --bg-color-1:hsl(var(--hue-1), 100%, 97%);
     --bg-color-2:#ffff;
     --bg-color-3: hsl(var(--hue-1), 100%, 98%);
     --bg-color-transparent: rgba(255, 255, 255, 0.6);
     --heading-color: hsl(var(--hue-1), 61%, 24%);
     --text-color: hsl(var(--hue-1), 17%, 63%);
-    --section-padding: 7rem;
+    --bg-color: hsl(var(--hue-1), 40%, 97%);
+}
+
+body.dark{
+    
 }
 
 /* ------------- General Styles ------------- */
