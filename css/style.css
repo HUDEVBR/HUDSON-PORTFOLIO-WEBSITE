@@ -567,6 +567,15 @@ body.open .hamburger .bar:last-child{
     column-gap: 2rem;
 }
 
+.box-desc .btn{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    width: 10rem;
+}
+
 .skills-wrap{
     display: grid;
     grid-template-columns: repeat(4, 150px);
