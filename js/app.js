@@ -18,6 +18,8 @@ const links = document.querySelectorAll(".nav-link");
 
 const toggle_btn = document.querySelector(".toggle-btn");
 
+const hamburger = document.querySelector(".hamburger");
+
 window.addEventListener("scroll", () => {
     activeLink();
     if(!skillsPlayed) skillsCounter();
@@ -45,7 +47,7 @@ stickyNavbar();
 
 window.addEventListener("scroll", stickyNavbar);
 
-/*--------------------------- Reveal Animation ---------------------------*/
+/*--------------------------- Reveal Animation /*---------------------------
 
 let sr = ScrollReveal({
     duration: 2500,
@@ -212,4 +214,10 @@ function changeTheme(isDark) {
 
 toggle_btn.addEventListener("click", () => {
     changeTheme(!document.body.classList.contains("dark"));
+})
+
+/*--------------------------- Open & Close Navbar Menu ---------------------------*/
+
+hamburger.addEventListener("click", () => {
+    document.body.classList.toggle("open");
 })

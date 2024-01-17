@@ -199,6 +199,7 @@ ul{
 
 .square{
     width: 70px;
+    transition: 0.3s opacity;
 }
 
 .container{
@@ -215,7 +216,7 @@ ul{
     font-size: 1.5rem;
     color: var(--heading-color);
     letter-spacing: 1px;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .logo span{
@@ -231,6 +232,7 @@ header{
     width: 100%;
     z-index: 10;
     transition: 0.3s;
+    background-color: var(--bg-color-2);
 }
 
 header.scrolled {
@@ -257,7 +259,8 @@ header.scrolled .logo{
 
 .links{
     flex: 1;
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: space-between;
 }
 
@@ -325,7 +328,46 @@ header.scrolled .logo{
     filter: brightness(97%)
 }
 
-/* ------------- Showcase Area Styling ------------- */
+.hamburger{
+    padding: 1rem 0;
+    height: 12px;
+    width: 25px;
+    box-sizing: content-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.hamburger .bar{
+    width: 100%;
+    height: 2px;
+    background-color: var(--heading-color);
+    border-radius: 3px;
+    position: absolute;
+}
+
+.hamburger .bar:first-child{
+    top: 1rem;
+    transition: top 0.2s 0.15s, transform 0.3s;
+}
+
+.hamburger .bar:last-child{
+    bottom: 1rem;
+    transition: bottom 0.2s 0.15s, transform 0.3s;
+}
+
+body.open .hamburger .bar:first-child{
+    top:50%;
+    transform:  translateY(-50%) rotate(-45deg);
+    transition: top 0.2s, transform 0.3s 0.1s;
+}
+
+body.open .hamburger .bar:last-child{
+    bottom:50%;
+    transform:  translateY(50%) rotate(45deg);
+    transition: bottom 0.2s, transform 0.3s 0.1s;
+}
+
+/* ----------------------------------- Showcase Area Styling ----------------------------------- */
 
 .showcase-area{
     padding: 120px 0;
@@ -338,7 +380,7 @@ header.scrolled .logo{
     display: grid;
     grid-template-columns: 1fr 550px;
     height: calc(100vh - 120px);
-    max-height: 600px;
+    height: 600px;
     align-items: center;
 }
 
@@ -426,7 +468,7 @@ header.scrolled .logo{
      align-items: center;
      justify-content: center;
      cursor: pointer;
-     transition: 0.5s transform;
+     transition: 0.5s transform, 0.3s background-color;
 }
 
 .about-card:nth-child(1){
@@ -453,15 +495,17 @@ header.scrolled .logo{
 
 .st0{
     fill: var(--bg-color-3);
+    transition: 0.3s fill;
 }
 
 .st1{
     fill: #c5e3ea;
+    transition: 0.3s fill;
 }
 
 .st2{
     fill: var(--heading-color);
-    transition: 0.3s;
+    transition: 0.3s;   
 }
 
 .about-card h3{
@@ -470,6 +514,7 @@ header.scrolled .logo{
     font-size: 1rem;
     margin-top: 1rem;
     letter-spacing: 0.3px;
+    transition: 0.3s color;
 }
 
 .about-card:hover{
@@ -512,6 +557,7 @@ header.scrolled .logo{
     border-radius: 20px;
     width: 100%;
     position: relative;
+    transition: 0.3s background-color;
 }
 
 .box-desc{
@@ -558,6 +604,7 @@ header.scrolled .logo{
     stroke-linecap: round;
     stroke-dasharray: 427;
     stroke-dashoffset: 427;
+    transition: 0.3s;
 }
 
 @keyframes progress{
@@ -575,6 +622,7 @@ header.scrolled .logo{
     color: var(--heading-color);
     font-weight: 400;
     font-size: 0.9rem;   
+    transition: 0.3s color;
 }
 
 .counter span{
@@ -586,6 +634,7 @@ header.scrolled .logo{
     margin-top: 0.75rem;
     font-weight: 400;
     font-size: 1rem;
+    transition: 0.3s color;
 }
 
 .skills .dots{
@@ -624,12 +673,14 @@ header.scrolled .logo{
 .milestones h2{
     color: var(--main-color-1);
     font-size: 1.3rem;
+    transition: 0.3s color;
 }
 
 .milestones h2 span{
     font-size: 2rem;
     line-height: 1.2;
     margin-right: 0.1rem;
+    transition: 0.3s color;
 }
 
 .milestones h5{
@@ -637,6 +688,7 @@ header.scrolled .logo{
     line-height: .9;
     font-weight: 500;
     font-size: 0.95rem;
+    transition: 0.3s color;
 }
 
 .services-grid{
@@ -656,12 +708,14 @@ header.scrolled .logo{
     align-items: flex-start;
     justify-content: space-between;
     min-height: 280px;
+    transition: 0.3s background-color;
 }
 
 .srv-card h3{
     color: var(--heading-color);
     font-weight: 500;
     font-size: 1.05rem;
+    transition: 0.3s color; 
 }
 
 .srv-card .text{
@@ -734,6 +788,7 @@ header.scrolled .logo{
     margin-left: 1.3rem;
     font-family: inherit;
     text-transform: uppercase;
+    transition: 0.3s color;
 }
 
 .filter-btn.mixitup-control-active{
@@ -753,6 +808,7 @@ header.scrolled .logo{
     height: 265px;
     display: grid;
     grid-template-rows: 1fr auto;
+    transition: 0.3s background-color;
 }
 
 .prt-image {
@@ -838,7 +894,7 @@ btn.secondary-btn.sm::before {
 .prt-image:hover .prt-icon {
     opacity: 1;
     transform: translateY(0px);
-    transition: .3s var(--i);
+    transition: 0.3s var(--i);
 }
 
 .modal{
@@ -875,7 +931,7 @@ btn.secondary-btn.sm::before {
     align-items: center;
     justify-items: center;
     opacity: 0;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .slider-wrap img{
@@ -910,7 +966,7 @@ btn.secondary-btn.sm::before {
 .portfolio.open .slider-wrap{
     transform: translate(-50%, -50%);
     opacity: 1;
-    transition: .45s .1s;
+    transition: 0.45s 0.1s;
 }
 
 /* --------------------------- Testimonials Section Styling --------------------------- */
@@ -931,6 +987,7 @@ btn.secondary-btn.sm::before {
     background-color: var(--bg-color-2);
     border-radius: 15px;
     padding: 4rem 0 2.5rem;
+    transition: 0.3s background-color;
 }
 
 .swiper-slide{
@@ -953,12 +1010,14 @@ btn.secondary-btn.sm::before {
     color: var(--heading-color);
     margin-bottom: .3rem;
     font-size: 1.05rem;
+    transition: 0.3s color;
 }
 
 .client-info h5{
     color: var(--text-color);
     font-weight: 500;
     font-size: .8rem;
+    transition: 0.3s color;
 }
 
 .client-info h5 a{
@@ -1049,7 +1108,7 @@ btn.secondary-btn.sm::before {
     color: var(--main-color-1);
     font-weight: 500;
     font-size: 1.1rem;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .mail i{
@@ -1057,7 +1116,7 @@ btn.secondary-btn.sm::before {
     font-size: 1.5rem;
     margin-left: 2px;
     transform: translate(3px);
-    transition: .3s margin-left;
+    transition: 0.3s margin-left;
 }
 
 .mail:hover{
@@ -1074,6 +1133,7 @@ btn.secondary-btn.sm::before {
     padding: 3.5rem 3rem;
     display: flex;
     flex-direction: column;
+    transition: 0.3s background-color;
 }
 
 .contact-form h3{
@@ -1082,6 +1142,7 @@ btn.secondary-btn.sm::before {
     font-weight: 500;
     margin-bottom: 1.6rem;
     line-height: 0.9;
+    transition: 0.3s color;
 }
 
 .form-input{
@@ -1151,6 +1212,7 @@ textarea.form-input{
     grid-template-columns: 1fr 1fr;
     column-gap: 6rem;
     align-items: center;
+    transition: 0.3s background-color;
 }
 
 .sub-box .heading{
@@ -1214,4 +1276,123 @@ footer .social-media{
 .social-link:hover{
     color: var(--main-color-1);
 
+}
+
+/* ----------------------------------- 1000px Screens ----------------------------------- */
+
+@media(max-width: 1000px){
+    .sub-heading{
+        font-size: 0.75rem;
+    }
+
+    .heading{
+        font-size: 2rem;
+    }
+
+    .showcase-area .heading{
+        font-size: 2.7rem;
+    }
+
+    .text{
+        font-size: 0.84rem;
+        margin: 1.3rem 0;
+    }
+
+    .btn{
+        padding: 0.8rem 1.6rem;
+        font-size: 0.8rem;
+        border-radius: 15px;
+        min-width: 100px;
+    }
+
+    .btn.secondary-btn{
+        font-size: 0.85rem;
+    }
+
+    .form-input{
+        padding: .8rem 1.45rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+    }
+
+    .logo{
+        font-size: 1.45rem;
+    }
+
+    header .logo{
+        height: 100px;
+        line-height: 100px;
+    }
+
+    .nav-link{
+        font-size: 0.7rem;
+    }
+
+    .showcase-area{
+        padding: 100px 0;
+    }
+
+    .showcase-area .container{
+        grid-template-columns: 1fr 400px;
+        height: 450px;
+    }
+
+    .skills-box{
+        padding: 4rem;
+    }
+
+    .sk-progress{
+        transform: scale(0.85);
+    }
+
+    .services .container{
+        column-gap: 2.5rem;
+    }
+
+    .contact .container{
+        column-gap: 2.5rem;
+    }
+
+    .contact-form{
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-form h3{
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact .form-input{
+        margin-bottom: .8rem;
+    }
+
+    .sub-box{
+        padding: 3.5rem 2.5rem;
+        column-gap: 2rem;
+    }
+
+    .filter-btn{
+        font-size: 0.7rem;
+    }
+}
+
+/* ----------------------------------- 768px Screens ----------------------------------- */
+
+@media(max-width: 768px){
+    :root{
+        --section-padding: 4.5rem;
+    }
+
+    .triangle{
+        width: 70px;
+    }
+    
+    .dots{
+        width: 65px;
+    }
+    
+    .square{
+        width: 55px;
+    }
+    
 }
