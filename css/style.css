@@ -3,7 +3,7 @@
 /* ------------- Website Theme ------------- */
 
 :root{
-    --hue-1: 257;
+    --hue-1: 550;
     --hue-2: 47;
     --main-color-1: hsl(var(--hue-1), 100%, 60%);
     --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
