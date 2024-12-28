@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
 
-/* ------------- Website Theme ------------- */
+/* ------------- Tema to webiste ------------- */
 
 :root{
     --hue-1: 550;
@@ -57,7 +57,7 @@ body.dark .form-input:hover{
     filter: brightness(110%);
 }
 
-/* ---------------------------- General Styles ---------------------------- */
+/* ---------------------------- Estilos Gerais ---------------------------- */
 
 *, *::before, *::after{
     padding: 0;
@@ -223,7 +223,7 @@ ul{
     color: var(--main-color-1);
 }
 
-/* ------------- Navbar Styling ------------- */
+/* ------------- Estilização da barra de navegação ------------- */
 
 header{
     position: fixed;
@@ -367,7 +367,7 @@ body.open .hamburger .bar:last-child{
     transition: bottom 0.2s, transform 0.3s 0.1s;
 }
 
-/* ----------------------------------- Showcase Area Styling ----------------------------------- */
+/* ----------------------------------- Estilização do showcase ----------------------------------- */
 
 .showcase-area{
     padding: 120px 0;
@@ -436,7 +436,7 @@ body.open .hamburger .bar:last-child{
     transform: translate(-50%, -50%);
 }
 
-/* --------------- About Section Styling --------------- */
+/* --------------- Estilização da seção sobre --------------- */
 
 .about .container{
     display: grid;
@@ -545,7 +545,7 @@ body.open .hamburger .bar:last-child{
     transform: translate(-50%, -50%);
 }
 
-/* --------------------------- Skills Section Styling --------------------------- */
+/* --------------------------- Estilização da seção de habilidades --------------------------- */
 
 .skills{
     overflow: hidden;
@@ -661,7 +661,7 @@ body.open .hamburger .bar:last-child{
     transform: translate(-50%, -50%);
 }
 
-/* ------------- Services Section Styling ------------- */
+/* ------------- Estilização da seção de serviços ------------- */
 
 .services .container{
     display: grid;
@@ -768,7 +768,7 @@ body.open .hamburger .bar:last-child{
     z-index: -1;
 }
 
-/*------------------------------------- Portfolio Section Styling ------------------------------------- */
+/*------------------------------------- Estilização da seção de portfolio ------------------------------------- */
 
 .portfolio .container{
     transition: 0.4s;
@@ -978,7 +978,7 @@ btn.secondary-btn.sm::before {
     transition: 0.45s 0.1s;
 }
 
-/* --------------------------- Testimonials Section Styling --------------------------- */
+/* --------------------------- Estilização da seção depoimentos --------------------------- */
 
 .testimonials{
     overflow: hidden;
@@ -1109,7 +1109,7 @@ btn.secondary-btn.sm::before {
     transform: translate(-50%, -50%);
 }
 
-/* --------------------------- Contact Section Styling --------------------------- */
+/* --------------------------- Estilização da seção de contatos --------------------------- */
 
 .contact .container{
     display: grid;
@@ -1210,7 +1210,7 @@ textarea.form-input{
     transform: translate(-50%, -50%);
 }
 
-/* --------------------------- Subscription Section Styling --------------------------- */
+/* --------------------------- Estilização da seção dos incritos --------------------------- */
 
 .subscription{
     overflow: hidden;
@@ -1256,7 +1256,7 @@ textarea.form-input{
     transform: translate(0%, -50%) scale(0.95);
 }
 
-/* --------------------------- Footer Styling --------------------------- */
+/* --------------------------- Estilização do pé da página --------------------------- */
 
 footer{
     padding: 4rem 0;
@@ -1291,7 +1291,7 @@ footer .social-media{
 
 }
 
-/* ----------------------------------- 1000px Screens ----------------------------------- */
+/* ----------------------------------- Estilização tamanho 1000px Screen ----------------------------------- */
 
 @media(max-width: 1000px){
     .sub-heading{
@@ -1389,7 +1389,7 @@ footer .social-media{
     }
 }
 
-/* ----------------------------------- 768px Screens ----------------------------------- */
+/* ----------------------------------- Estilização tamanho 768px Screen ----------------------------------- */
 
 @media(max-width: 768px){
     :root{
@@ -1728,7 +1728,7 @@ footer .social-media{
     }
 }
 
-/* ----------------------------------- 500px Screens ----------------------------------- */
+/* ----------------------------------- Estilização tamanho 500px Screen ----------------------------------- */
 
 @media(max-width: 500px){
     .container{

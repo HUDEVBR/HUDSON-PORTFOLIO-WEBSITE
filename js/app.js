@@ -37,7 +37,7 @@ function updateCount(num, maxNum){
     }
 }
 
-/*--------------------------- Sticky Navbar ---------------------------*/
+/*--------------------------- Barra de navegação "grudenta" ---------------------------*/
 
 function stickyNavbar(){
     header.classList.toggle("scrolled", window.scrollY);
@@ -57,7 +57,7 @@ let sr = ScrollReveal({
 sr.reveal(".showcase-info", {delay: 600});
 sr.reveal(".showcase-image", {origin: "top", delay: 700});
 
-/*--------------------------- Skills Progress Bar Animation ---------------------------*/
+/*--------------------------- Animação da barra de progressão das habilidades ---------------------------*/
 
 function hasReached(el){
     let topPosition = el.getBoundingClientRect().top;
@@ -91,7 +91,7 @@ function skillsCounter(){
 
 skillsCounter();
 
-/*--------------------------- Services Counter Animation ---------------------------*/
+/*--------------------------- Animação da contagem de serviços ---------------------------*/
 
 let mlPlayed = false;
 
@@ -108,7 +108,7 @@ function mlCounter(){
     })
 }
 
-/*--------------------------- Portfolio Filter Animation ---------------------------*/
+/*--------------------------- Animação filtro porfolio ---------------------------*/
 
 let mixer = mixitup(".portfolio-gallery", {
     selectors: {
@@ -119,7 +119,7 @@ let mixer = mixitup(".portfolio-gallery", {
     },
 });
 
-/*--------------------------- Modal Pop Up Animation ---------------------------*/
+/*--------------------------- Animação projetos ---------------------------*/
 
 let currentIndex = 0;
 
@@ -160,22 +160,22 @@ function changeImage(index) {
     images[index].classList.add("showImage");
 }
 
-/*--------------------------- Modal Pop Up Animation ---------------------------*/
+/*--------------------------- Animação pop up modal ---------------------------*/
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
+    // Parâmetros opcionais
     loop: true,
     speed: 500,
     autoplay: true,
   
-    // If we need pagination
+    // Se for necessário paginação
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
 });
   
-/*--------------------------- Change Active Link on Scroll ---------------------------*/
+/*--------------------------- Adivação de mudança da barra de rolagem ---------------------------*/
 
 function activeLink() {
     let sections = document.querySelectorAll("section[id]");
@@ -194,7 +194,7 @@ function activeLink() {
 
 activeLink();
 
-/*--------------------------- Change Page Theme ---------------------------*/
+/*--------------------------- Mudar tema da página ---------------------------*/
 
 let firstTheme = localStorage.getItem("dark");
 
@@ -216,7 +216,7 @@ toggle_btn.addEventListener("click", () => {
     changeTheme(!document.body.classList.contains("dark"));
 })
 
-/*--------------------------- Open & Close Navbar Menu ---------------------------*/
+/*--------------------------- Abrir e Fechar botão de navegação menu ---------------------------*/
 
 hamburger.addEventListener("click", () => {
     document.body.classList.toggle("open");
