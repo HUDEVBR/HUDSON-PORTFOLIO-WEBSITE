@@ -583,6 +583,13 @@ body.open .hamburger .bar:last-child{
     justify-content: space-between;
 }
 
+.skills-wrap .skill img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
 .skill{
     display: flex;
     flex-direction: column;
